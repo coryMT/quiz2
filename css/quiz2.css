@@ -1,27 +1,73 @@
 /*Write more CSS to do the following:
- - a transition on the section elements that when hovered on, the background color changes to something else
- - give a border to the section elements and a border radius of 10px
- - set up the document to use ems or rems based off of a 62.5% root font size
- - a transition that moves the <p> tags over a few pixels when you hover over them (and back when you aren't hovering)*/
+ - a transition on the section elements that when hovered on, the background color changes to something else //DONE
+ - give a border to the section elements and a border radius of 10px //DONE
+ - set up the document to use ems or rems based off of a 62.5% root font size //DONE
+ - a transition that moves the <p> tags over a few pixels when you hover over them (and back when you aren't hovering) //DONE*/
 
-html, bdy {
+html, body {
 	font-family: Helvetica, Arial, sans-serif;
-	background: #eeee;
+	background: #eeeeee;
+	font-size:62.5%;
 }
 
 p {
 	margin: 10px 0;
-	font-weight: bold
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+
+p:hover {
+	transform: translate(25px, 0px);
+}
+
+h1 {
+	font-size: 3.5rem;
 }
 
 section {
 	margin-bottom: 10px;
+	border-style: solid;
+  border-width: 5px;
+	border-radius: 10px;
 }
 
 ul {
 	list-style: none;
 }
 
-ul {
-	list-style: none;
+li {
+	font-size: 1.5rem;
+}
+
+button {
+	width: 500px;
+	text-align: center;
+}
+
+.invisibleForNow {
+	display: none !important;
+}
+
+.appear {
+	display: block;
+}
+
+#quiz {
+	display: none;
+}
+
+#mainSection:hover {
+	background-color: #ADD8E6;
+}
+
+#secondarySection:hover {
+	background-color: #FFB6C1;
+}
+
+#quiz:hover {
+	background-color: #ffffe0;
+}
+
+#secondarySection p {
+	margin: 50px 0px 50px 0px;
 }

@@ -2,40 +2,80 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-400000">
-	
+	<link rel="stylesheet" href="css/quiz2.css">
 </head>
 <body>
 	<h1>Welcome To The Wonderful World of Debugging Code</h1>
 
 	<section id="mainSection">
-		<p>This is a paragraph, I promise.</p
+		<p>This is a paragraph, I promise.</p>
 
 		<ul class="links">
 			<li>
-				<a>Link 1<a>
+				<a href="#">Link 1</a>
 			</li>
 			<li>
 				<a href="#">Link 2</a>
 			</li>
 			<li>
-				<a href="#">Link 487
+				<a href="#">Link 487</a>
 			</li>
 		</ul>
-	
+	</section>
 
 	<p>I am a lonely paragraph, with no immediate parent.</p>
 
-	<section id=secondarySection>
+	<section id="secondarySection">
 		<p>Woop woop!!!</p>
 		<p>See how elegantly we're spaced out?</p>
-		<p>Yeah, we're spaced out alright.<//p>
-		
+		<p>Yeah, we're spaced out alright.</p>
+
 		<ol>
-			<li>I'm like an unordered list</li>	
-			<li>But I'm more orderly<li>
+			<li>I'm like an unordered list</li>
+			<li>But I'm more orderly</li>
 			<li>That was a really bad joke.</li>
-		<ol>
+		</ol>
 	</section>
-	
+
+	<button class="clickForQuiz">Click here to do a quiz (and see a cool sliding effect....)!</button> </br>
+
+	<section id="quiz">
+		<p>
+	 		This is a quiz. Click the buttons to see the answers!
+		</p>
+
+		<button class="accordion" onclick="buttonClicked('0')">What is 2+2?</button>
+		<div id="0" class="invisibleForNow">
+			<p>
+				4!
+			</p>
+		</div><br>
+
+		<button class="accordion" onclick="buttonClicked('1')">What the derivative of 4x?</button>
+		<div id="1" class="invisibleForNow">
+			<p>
+				Also 4!
+			</p>
+		</div><br>
+
+		<button class="accordion" onclick="buttonClicked('2')">What is the most commonly used value of pi?</button>
+		<div id="2" class="invisibleForNow">
+			<p>
+				3.14!
+			</p>
+		</div><br>
+
+		<button class="accordion" onclick="buttonClicked('3')"> What do we need to do to get out of the Kelp Forest??</button>
+		<div id="3" class="invisibleForNow">
+			<p>
+				Nothing. <a href="https://www.youtube.com/watch?v=Lu5SJcNp0J0" target="_blank">(This is a SpongeBob reference)</a>
+			</p>
+		</div>
+	</section>
+
+	<button class="exitButton">Exit</button>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script type="text/javascript" src="js/quiz2.js" ></script>
 </body>
 </hmtl>
